@@ -1,0 +1,9 @@
+{
+  "entity.wich.bouldering_zombie": "Undead Climbin' Sailor",
+  "item.wich.bouldering_zombie_spawn_egg": "Undead Climbin' Sailor Cackle Fruit",
+  "subtitles.entity.bouldering_zombie.ambient": "Undead Climbin' Sailor groans",
+  "subtitles.entity.bouldering_zombie.death": "Undead Climbin' Sailor perishes",
+  "subtitles.entity.bouldering_zombie.hurt": "Undead Climbin' Sailor gets hurt",
+  "subtitles.entity.bouldering_zombie.climb": "Undead Climbin' Sailor doin' what ye expect",
+  "subtitles.entity.parrot.imitate.bouldering_zombie": "Yer' best matey be groanin'"
+}
