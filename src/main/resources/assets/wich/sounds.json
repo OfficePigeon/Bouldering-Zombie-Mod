@@ -1,0 +1,39 @@
+{
+  "entity.bouldering_zombie.ambient": {
+	"sounds": [ "mob/zombie/say1", "mob/zombie/say2", "mob/zombie/say3" ],
+	"subtitle": "subtitles.entity.bouldering_zombie.ambient"
+  },
+  "entity.bouldering_zombie.death": {
+	"sounds": [  "mob/zombie/death" ],
+	"subtitle": "subtitles.entity.bouldering_zombie.death"
+  },
+  "entity.bouldering_zombie.hurt": {
+	"sounds": [ "mob/zombie/hurt1", "mob/zombie/hurt2" ],
+	"subtitle": "subtitles.entity.bouldering_zombie.hurt"
+  },
+  "entity.bouldering_zombie.step": {
+	"sounds": [ "mob/zombie/step1", "mob/zombie/step2", "mob/zombie/step3", "mob/zombie/step4", "mob/zombie/step5" ],
+	"subtitle": "subtitles.block.generic.footsteps"
+  },
+  "entity.bouldering_zombie.ambientclimb": {
+	"sounds": [
+	  { "name": "wich:mob/bouldering_zombie/idle1", "volume": 0.75 },
+	  { "name": "wich:mob/bouldering_zombie/idle2", "volume": 0.75 },
+	  { "name": "wich:mob/bouldering_zombie/idle3", "volume": 0.75 },
+	  { "name": "wich:mob/bouldering_zombie/idle4", "volume": 0.75 }
+	],
+	"subtitle": "subtitles.entity.bouldering_zombie.ambient"
+  },
+  "entity.bouldering_zombie.climb": {
+	"sounds": [
+	  { "name": "wich:mob/bouldering_zombie/climb1", "volume": 0.75 },
+	  { "name": "wich:mob/bouldering_zombie/climb2", "volume": 0.75 },
+	  { "name": "wich:mob/bouldering_zombie/climb3", "volume": 0.75 }
+	],
+	"subtitle": "subtitles.entity.bouldering_zombie.climb"
+  },
+  "entity.parrot.imitate.bouldering_zombie": {
+	"sounds": [ { "name": "wich:entity.bouldering_zombie.ambient", "pitch": 1.8, "type": "event", "volume": 0.6 } ],
+	"subtitle": "subtitles.entity.parrot.imitate.bouldering_zombie"
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "wich",
+	"version": "${version}",
+	"name": "Bouldering Zombies",
+	"description": "Adds the Bouldering Zombie from Minecraft Earth.",
+	"authors": [ "dovewich" ],
+	"contact": {
+		"homepage": "https://www.wich.fun/",
+		"sources": "https://github.com/OfficePigeon/Bouldering-Zombie-Mod"
+	},
+	"license": "",
+	"icon": "assets/wich/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [ "fun.wich.BoulderingZombiesMod" ],
+		"client": [ "fun.wich.client.BoulderingZombiesClient" ]
+	},
+	"mixins": [
+		"wich.boulderingzombies.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": ">=1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
