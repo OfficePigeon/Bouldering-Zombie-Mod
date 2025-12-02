@@ -5,7 +5,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
-import net.minecraft.client.render.entity.EntityRendererFactories;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.util.Identifier;
@@ -21,6 +21,6 @@ public class BoulderingZombiesClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		EntityModelLayerRegistry.registerModelLayer(BOULDERING_ZOMBIE, BoulderingZombieEntityModel::getTexturedModelData);
 		EntityModelLayerRegistry.registerModelLayer(BOULDERING_ZOMBIE_BABY, () -> BoulderingZombieEntityModel.getTexturedModelData().transform(BipedEntityModel.BABY_TRANSFORMER));
-		EntityRendererFactories.register(BoulderingZombiesMod.BOULDERING_ZOMBIE, BoulderingZombieEntityRenderer::new);
+		EntityRendererRegistry.register(BoulderingZombiesMod.BOULDERING_ZOMBIE, BoulderingZombieEntityRenderer::new);
 	}
 }
