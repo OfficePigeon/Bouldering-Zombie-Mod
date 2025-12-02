@@ -16,7 +16,7 @@ import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.World;
 
 public class BoulderingZombieEntity extends ZombieEntity {
-	private static final TrackedData<Boolean> CLIMBING = DataTracker.registerData(BoulderingZombieEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+	protected static final TrackedData<Boolean> CLIMBING = DataTracker.registerData(BoulderingZombieEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 	public BoulderingZombieEntity(EntityType<? extends ZombieEntity> entityType, World world) { super(entityType, world); }
 	@Override
 	protected void initDataTracker(DataTracker.Builder builder) {

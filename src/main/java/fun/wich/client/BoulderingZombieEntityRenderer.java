@@ -15,6 +15,6 @@ public class BoulderingZombieEntityRenderer extends ZombieBaseEntityRenderer<Bou
 	public BoulderingZombieEntityRenderer(EntityRendererFactory.Context context) {
 		super(context, new BoulderingZombieEntityModel(context.getPart(BoulderingZombiesClient.BOULDERING_ZOMBIE)), new BoulderingZombieEntityModel(context.getPart(BoulderingZombiesClient.BOULDERING_ZOMBIE_BABY)), EquipmentModelData.mapToEntityModel(EntityModelLayers.ZOMBIE_EQUIPMENT, context.getEntityModels(), ZombieEntityModel<ZombieEntityRenderState>::new), EquipmentModelData.mapToEntityModel(EntityModelLayers.ZOMBIE_BABY_EQUIPMENT, context.getEntityModels(), ZombieEntityModel<ZombieEntityRenderState>::new));
 	}
-	public ZombieEntityRenderState createRenderState() { return new ZombieEntityRenderState(); }
-	public Identifier getTexture(ZombieEntityRenderState zombieEntityRenderState) { return TEXTURE; }
+	@Override public ZombieEntityRenderState createRenderState() { return new ZombieEntityRenderState(); }
+	@Override public Identifier getTexture(ZombieEntityRenderState state) { return TEXTURE; }
 }
